@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Css Grid</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        /* grid-column-gap: 1rem;
+        grid-row-gap: 1rem;*/
+        grid-gap: 1rem;
+      }
+      .wrapper > div {
+        background: #eee;
+        padding: 2rem;
+      }
+      .wrapper > div:nth-child(odd) {
+        background: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit
+        accusamus earum adipisci numquam ducimus perferendis maiores ipsam ipsum
+        deserunt. Ab nulla possimus ipsa reprehenderit? Enim tempora ullam quis
+        molestias temporibus? Reiciendis, laboriosam odio ut dolores repellat
+        adipisci obcaecati iusto?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        consectetur magni provident voluptatibus maxime nesciunt beatae quidem
+        deleniti architecto. Id recusandae blanditiis libero quia eveniet a,
+        fugit quas deleniti magnam quisquam nostrum sit minus eius? Autem in ex
+        harum debitis eum. Quos quae, nemo odit voluptatibus assumenda amet
+        iusto, molestiae sint dolor minus ab nam non placeat dolorum nisi
+        delectus! Fugit pariatur rem dolorem, nihil suscipit facilis ab adipisci
+        voluptatum delectus maiores, minima at perferendis iusto obcaecati
+        deserunt quisquam tenetur.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit
+        accusamus earum adipisci numquam ducimus perferendis maiores ipsam ipsum
+        deserunt. Ab nulla possimus ipsa reprehenderit? Enim tempora ullam quis
+        molestias temporibus? Reiciendis, laboriosam odio ut dolores repellat
+        adipisci obcaecati iusto?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        consectetur magni provident voluptatibus maxime nesciunt beatae quidem
+        deleniti architecto. Id recusandae blanditiis libero quia eveniet a,
+        fugit quas deleniti magnam quisquam nostrum sit minus eius? Autem in ex
+        harum debitis eum. Quos quae, nemo odit voluptatibus assumenda amet
+        iusto, molestiae sint dolor minus ab nam non placeat dolorum nisi
+        delectus! Fugit pariatur rem dolorem, nihil suscipit facilis ab adipisci
+        voluptatum delectus maiores, minima at perferendis iusto obcaecati
+        deserunt quisquam tenetur.
+      </div>
+    </div>
+  </body>
+</html>

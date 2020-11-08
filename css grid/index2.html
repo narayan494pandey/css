@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS Grid</title>
+    <style>
+      .wrapper {
+        display: grid;
+        /* grid-template-columns: 1fr 1fr 1fr;*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        /* for grid height*/
+        grid-auto-rows: minmax(50px, auto);
+      }
+      .nested {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: minmax(5px, auto);
+      }
+      .wrapper > div {
+        background: #eee;
+        padding: 1em;
+      }
+      .wrapper > div:nth-child(odd) {
+        background: #ddd;
+      }
+      .nested > div {
+        border: blueviolet 1px solid;
+        padding: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, esse.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+        praesentium?
+      </div>
+      <div class="nested">
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+        <div>Lorem.</div>
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+        praesentium?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+        praesentium?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+        praesentium?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+        praesentium?
+      </div>
+    </div>
+  </body>
+</html>
